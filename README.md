@@ -1,16 +1,23 @@
-# React + Vite
+# UTEQ Smart Parking - Monitoreo Telemático 🚗📡
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Aplicación web desarrollada en React para la simulación y visualización en tiempo real de un estacionamiento inteligente de 80 espacios, ubicado en la Facultad de Ciencias de la Salud de la Universidad Técnica Estatal de Quevedo (UTEQ).
 
-Currently, two official plugins are available:
+El proyecto simula sensores ultrasónicos conectados a Firebase Realtime Database para monitorear la disponibilidad de las plazas.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Características Principales
+- **Simulación en Tiempo Real:** Script en Node.js que inyecta datos de sensores simulando el tráfico de vehículos.
+- **Dashboard Interactivo:** Cuadrícula de 80 espacios (4 columnas x 20 filas) con actualización automática.
+- **Detalle e Historial:** Registro de los últimos eventos (hora, estado y distancia en cm) por cada sensor.
+- **Filtros:** Capacidad para filtrar los espacios por estado (Libre/Ocupado) y por columna (A, B, C, D).
+- **Mapa Geográfico:** Integración con Leaflet para visualizar el Bounding Box exacto del parqueadero en el campus.
 
-## React Compiler
+## Requisitos Previos
+- Node.js instalado en el sistema.
+- Una cuenta de Firebase con un proyecto y Realtime Database habilitada (modo prueba).
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Instalación
 
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+1. Clonar el repositorio:
+   ```bash
+   git clone [https://github.com/hfonsecap/uteq-smart-parking.git](https://github.com/hfonsecap/uteq-smart-parking.git)
+   cd uteq-smart-parking
